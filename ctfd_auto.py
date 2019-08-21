@@ -66,10 +66,10 @@ class Spider():
         return json.loads(r.text)
         
 def main():
-    website = "https://dragonctf.com"
-    username = "athf.flcl@gmail.com"
-    password = "register"
-    match_key = "Misc"
+    website = "" #Input CTFD hosted website
+    username = "" #Input User Name
+    password = "" #Input Pass
+    match_key = "Misc" #input question label
     #target = sys.argv[4]
     spider = Spider(website, username, password)
     print("[.] Attempting login...")
